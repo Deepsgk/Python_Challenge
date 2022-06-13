@@ -2,9 +2,8 @@ import os
 import csv
 from statistics import mean
 # created this common path for both the projects- bank and poll
-pathlead ='C:/Users/deepa/Desktop/Python_Challenge/' 
 # Join various path components
-csvpath= os.path.join(pathlead, 'Resources', 'budget_data.csv').replace("\\","/")
+csvpath= os.path.join('Resources', 'budget_data.csv').replace("\\","/")
 with open (csvpath,newline='') as csvfile:
    csvreader = csv.reader(csvfile,delimiter=',')
    csv_header = next(csvreader)
